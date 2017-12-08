@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<title>The Daily Monash</title>
+<head>
+<link rel="stylesheet" href="styles.css">
+<script src="index.js"></script> 
+<script src="unitSelection.js"></script>
+</head>
+
+<body onload = "setInterval(initialize,500); unitSelection();">
+
+	<h1>The Daily Monash</h1>
+	<h2>WAM Calculator</h2> 
+	<form id="WAMForm">
+	<table id="WAM">
+		<tr>
+			<th colspan="5">First Year</th>
+			<th colspan="5">Second Year</th>
+			<th colspan="5">Third Year</th>
+			<th colspan="5">Fourth Year</th>
+		</tr>
+		<tr>
+			<td colspan="5">First Semester</td>
+			<td colspan="5">First Semester</td>
+			<td colspan="5">First Semester</td>
+			<td colspan="5">First Semester</td>
+		</tr>
+		<tr>
+		<td>Unit Code</td>
+		<td>Level</td>
+		<td>Credits</td>
+		<td>Marks</td>
+		<td>Grade</td>
+		<td>Unit Code</td>
+		<td>Level</td>
+		<td>Credits</td>
+		<td>Marks</td>
+		<td>Grade</td>
+		<td>Unit Code</td>
+		<td>Level</td>
+		<td>Credits</td>
+		<td>Marks</td>
+		<td>Grade</td>
+		<td>Unit Code</td>
+		<td>Level</td>
+		<td>Credits</td>
+		<td>Marks</td>
+		<td>Grade</td>
+		</tr>
+		<tr>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level0">-</td>
+			<td id=“credit0”><a href="#" id="links">-</a></td>
+			<td><input type="value" name="oneoneoner" style="width: 23px"></td>
+			<td id="grade1">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level2">-</td>
+			<td id=“credit2”>-</td>
+			<td><input type="value" name="twooneoner" style="width: 23px"></td>
+			<td id="grade3">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level4">-</td>
+			<td id=“credit4”>-</td>
+			<td><input type="value" name="threeoneoner" style="width: 23px"></td>
+			<td id="grade5">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level6">-</td>
+			<td id=“credit6”>-</td>
+			<td><input type="value" name="fouroneoner" style="width: 23px"></td>
+			<td id="grade7">-</td>
+		</tr>
+		<tr>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level8">-</td>
+			<td id=“credit8”>-</td>
+			<td><input type="value" name="oneonetwor" style="width: 23px"></td>
+			<td  id="grade9">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level10">-</td>
+			<td id=“credit10”>-</td>
+			<td><input type="value" name="twoonetwor" style="width: 23px"></td>
+			<td id="grade11">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level12">-</td>
+			<td id=“credit12”>-</td>
+			<td><input type="value" name="threeonetwor" style="width: 23px"></td>
+			<td  id="grade13">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level14">-</td>
+			<td id=“credit14”>-</td>
+			<td><input type="value" name="fouronetwor" style="width: 23px"></td>
+			<td id="grade15">-</td>
+		</tr>
+		<tr>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level16">-</td>
+			<td id=“credit16”>-</td>
+			<td><input type="value" name="oneonethreer" style="width: 23px"></td>
+			<td id="grade17">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level18">-</td>
+			<td id=“credit18”>-</td>
+			<td><input type="value" name="twoonethreer" style="width: 23px"></td>
+			<td id="grade19">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level20">-</td>
+			<td id=“credit20”>-</td>
+			<td><input type="value" name="threeonethreer" style="width: 23px"></td>
+			<td id="grade21">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level22">-</td>
+			<td id=“credit22”>-</td>
+			<td><input type="value" name="fouronethreer" style="width: 23px"></td>
+			<td id="grade23">-</td>
+		</tr>
+		<tr>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level24">-</td>
+			<td id=“credit24”>-</td>
+			<td><input type="value" name="oneonefourr" style="width: 23px"></td>
+			<td id="grade25">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level26">-</td>
+			<td id=“credit26”>-</td>
+			<td><input type="value" name="twoonefourr" style="width: 23px"></td>
+			<td id="grade27">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level28">-</td>
+			<td id=“credit28”>-</td>
+			<td><input type="value" name="threeonefourr" style="width: 23px"></td>
+			<td id="grade29">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level30">-</td>
+			<td id=“credit30”>-</td>
+			<td><input type="value" name="fouronefourr" style="width: 23px"></td>
+			<td id="grade31">-</td>
+		</tr>
+		<tr>
+			<td colspan="5">Second Semester</td>
+			<td colspan="5">Second Semester</td>
+			<td colspan="5">Second Semester</td>
+			<td colspan="5">Second Semester</td>
+		</tr>
+		<tr>
+		<td>Unit Code</td>
+		<td>Level</td>
+		<td>Credits</td>
+		<td>Marks</td>
+		<td>Grade</td>
+		<td>Unit Code</td>
+		<td>Level</td>
+		<td>Credits</td>
+		<td>Marks</td>
+		<td>Grade</td>
+		<td>Unit Code</td>
+		<td>Level</td>
+		<td>Credits</td>
+		<td>Marks</td>
+		<td>Grade</td>
+		<td>Unit Code</td>
+		<td>Level</td>
+		<td>Credits</td>
+		<td>Marks</td>
+		<td>Grade</td>
+		</tr>
+		<tr>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level32">-</td>
+			<td id=“credit32”>-</td>
+			<td><input type="value" name="oneoneoner" style="width: 23px"></td>
+			<td id="grade33">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level34">-</td>
+			<td id=“credit34”>-</td>
+			<td><input type="value" name="twotwooner" style="width: 23px"></td>
+			<td id="grade35">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level36">-</td>
+			<td id=“credit36”>-</td>
+			<td><input type="value" name="threetwooner" style="width: 23px"></td>
+			<td id="grade37">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level38">-</td>
+			<td id=“credit38”>-</td>
+			<td><input type="value" name="fourtwooner" style="width: 23px"></td>
+			<td id="grade39">-</td>
+		</tr>
+		<tr>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level40">-</td>
+			<td id=“credit40”>-</td>
+			<td><input type="value" name="onetwotwor" style="width: 23px"></td>
+			<td id="grade41">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level42">-</td>
+			<td id=“credit42”>-</td>
+			<td><input type="value" name="twotwotwor" style="width: 23px"></td>
+			<td id="grade43">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level44">-</td>
+			<td id=“credit44”>-</td>
+			<td><input type="value" name="threetwotwor" style="width: 23px"></td>
+			<td id="grade45">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level46">-</td>
+			<td id=“credit46”>-</td>
+			<td><input type="value" name="fourtwotwor" style="width: 23px"></td>
+			<td id="grade47">-</td>
+		</tr>
+		<tr>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level48">-</td>
+			<td id=“credit48”>-</td>
+			<td><input type="value" name="onetwothreer" style="width: 23px"></td>
+			<td id="grade49">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level50">-</td>
+			<td id=“credit50”>-</td>
+			<td><input type="value" name="twotwothreer" style="width: 23px"></td>
+			<td id="grade51">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level52">-</td>
+			<td id=“credit52”>-</td>
+			<td><input type="value" name="threetwothreer" style="width: 23px"></td>
+			<td id="grade53">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level54">-</td>
+			<td id=“credit54”>-</td>
+			<td><input type="value" name="fourtwothreer" style="width: 23px"></td>
+			<td id="grade55">-</td>
+		</tr>
+		<tr>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level56">-</td>
+			<td id=“credit56”>-</td>
+			<td><input type="value" name="onetwofourr" style="width: 23px"></td>
+			<td id="grade57">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level58">-</td>
+			<td id=“credit58”>-</td>
+			<td><input type="value" name="twotwofourr" style="width: 23px"></td>
+			<td id="grade59">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level60">-</td>
+			<td id=“credit60”>-</td>
+			<td><input type="value" name="threetwofourr" style="width: 23px"></td>
+			<td id="grade61">-</td>
+			<td><input name="Unit Code" list="unitList" placeholder="unit" style="width: 75px; text-transform: uppercase" />
+<datalist id="unitList"></datalist>
+            </td>
+			<td id="level62">-</td>
+			<td id=“credit62”>-</td>
+			<td><input type="value" name="fourtwofourr" style="width: 23px"></td>
+			<td id="grade63">-</td>
+		</tr>
+	</table>
+	</form>
+	<p>WAM Result: <u id="WAMResult"></u></p>
+	<p>GPA Result: <u id="GPAResult"></u></p>
+</body>
+</html> 
