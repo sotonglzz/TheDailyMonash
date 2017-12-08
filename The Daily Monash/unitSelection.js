@@ -18,14 +18,14 @@ var unitList = new Array;
             }
         for (var i=0; i< data3.length; i++)
             {
-                unitList.push(data3[i]);
+                unitList.push(data3[i]);	
             }
     for (var i=0; i< data4.length; i++)
             {
                 unitList.push(data4[i]);
             }
     for (var i=0; i< data5.length; i++)
-            {
+            {	
                 unitList.push(data5[i]);
             }
     for (var i=0; i< data6.length; i++)

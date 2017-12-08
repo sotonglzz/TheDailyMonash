@@ -8,6 +8,10 @@ function initialize(){
 			var input = form.elements[i].value;
 			var level = input.charAt(3);
 			document.getElementById("level" + i).innerHTML = level
+			var link="";
+			link += "http://www.monash.edu/pubs/2017handbooks/units/"+input+".html"
+			var foo = document.getElementById("links");
+			foo.href = link;
 		}
 		i=i+2;
 	}
