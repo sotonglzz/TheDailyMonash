@@ -32,6 +32,12 @@ var unitList = new Array;
             {
                 unitList.push(data6[i]);
             }
+    
+    for (var i=0; i<64;){
+    var input = JSON.parse(localStorage.getItem("input"+i));
+    var index = unitList.indexOf(input);
+localStorage.setItem("index"+i, index);
+        i+=2}
         
   var options = '';
 
